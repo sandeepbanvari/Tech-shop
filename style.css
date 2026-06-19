@@ -95,6 +95,50 @@ a {
     border-radius: 5px;
 }
 
+.category-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+}
+.product-type {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 0 40px; /* space for arrows */
+}
+
+.product-type::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
 
 .product-cards {
     display: flex;
@@ -281,6 +325,7 @@ a {
     background-color: #324354;
     padding: 0 64px;
     text-align: center;
+    border-radius: 5px;
 }
 .advantages-grid{
     display: flex;
@@ -421,7 +466,248 @@ label span {
 }
 
 /* Mobile Responsive */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+
+.nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .header {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 10px;
+    }
+
+    .search {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .search input {
+        width: 100%;
+        margin-left: 0;
+        height: 30px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 8px;
+        font-size: 14px;
+    }
+    .product-title{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 10px 10px;
+    }
+    .product-type {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
+        justify-content: flex-start;
+        padding: 0 55px;
+        margin: 20px 0 30px;
+    }
+
+    .product-type::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-type button {
+        flex-shrink: 0;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .category-wrapper {
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .scroll-btn {
+        display: flex;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .product-type button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .products-section{
+        padding: 30px;
+    }
+
+    .product-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .card,
+    .card1 {
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 90px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .rating {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 8px;
+    }
+
+    .card h2 {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .card p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .price {
+        gap: 5px;
+        margin-top: 8px;
+    }
+
+    .price span:first-child {
+        font-size: 13px;
+    }
+
+    .price span:last-child {
+        font-size: 10px;
+    }
+
+    .card button {
+        font-size: 11px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    .card1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 250px;
+    }
+
+    .card1 h3 {
+        line-height: normal;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .product-advantages {
+        padding: 30px 10px 0;
+        margin: 0 10px;
+    }
+
+    .advantages {
+        padding: 20px 10px;
+    }
+
+    .advantages h2 {
+        font-size: 24px;
+    }
+
+    .advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .advantage-card {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .advantage-card i {
+        font-size: 30px;
+    }
+
+    .advantage-card h3,
+    .advantage-card h2 {
+        font-size: 14px;
+    }
+
+    .advantage-card p {
+        font-size: 12px;
+    }
+
+    .nav-footer {
+        flex-direction: column;
+        margin: 0;
+        padding: 30px 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter h2,
+    .nav-footer h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .newsletter p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-footer a {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    /* Signup and Login Pages */
     .flex {
         flex-direction: column;
     }

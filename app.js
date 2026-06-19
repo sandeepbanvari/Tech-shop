@@ -20,3 +20,12 @@ userIcon.addEventListener("click", () => {
 });
 
 
+const productType = document.getElementById("productType");
+
+document.querySelector(".left").addEventListener("click", () => {
+    productType.scrollLeft -= 150;
+});
+
+document.querySelector(".right").addEventListener("click", () => {
+    productType.scrollLeft += 150;
+});

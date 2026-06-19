@@ -20,22 +20,27 @@
             <input type="search" placeholder="Search Products....">
         </div>
         <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-arrow-down">
-                <sup class="superscript"></sup>
+            <div> <i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-cart-arrow-down"></i></div>
             </i>
-            <i class="fa-solid fa-user" id="user-icon"></i>
+            <div><i class="fa-solid fa-user" id="user-icon"></i></div>
         </div>
     </header>
 
     <section class="products-section">
         <div class="product-title">Top Products</div>
-        <div class="product-type">
-            <button class="active">All</button>
-            <button>Earphones</button>
-            <button>Headphones</button>
-            <button>Earbuds</button>
-            <button>Neckband</button>
+        <div class="category-wrapper">
+            <i class="fa-solid fa-chevron-left scroll-btn left"></i>
+
+            <div class="product-type" id="productType">
+                <button class="active">All</button>
+                <button>Earphones</button>
+                <button>Headphones</button>
+                <button>Earbuds</button>
+                <button>Neckband</button>
+            </div>
+
+            <i class="fa-solid fa-chevron-right scroll-btn right"></i>
         </div>
         <div class="product-cards">
             <div class="card">
