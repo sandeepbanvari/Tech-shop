@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="signup-container">
+        <form class="form" action="./index.html" method="post">
+            <p class="title">Sign In</p>
+            <p class="message">Welcome back! Please login to your account.</p>
+
+            <label>
+                <input required type="email" class="input" id="email">
+                <span>Email</span>
+            </label>
+
+            <label>
+                <input required type="password" class="input" id="password">
+                <span>Password</span>
+            </label>
+
+            <button type="submit" class="submit">Login</button>
+
+            <p class="signin">
+                Don't have an account?
+                <a href="./signup.html">Register</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

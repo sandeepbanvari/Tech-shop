@@ -12,3 +12,11 @@ searchIcon.addEventListener("click", () => {
         searchInput.style.display = "none";
     }
 });
+
+const userIcon = document.getElementById("user-icon");
+
+userIcon.addEventListener("click", () => {
+    window.location.href = "signin.html";
+});
+
+
